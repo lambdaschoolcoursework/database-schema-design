@@ -4,8 +4,8 @@ module.exports = {
 	development: {
 		client: 'pg',
 		connection: {
-            database: 'cars',
-            user: 'postgres',
+            database: process.env.DATABASE,
+            user: process.env.USER,
             password: process.env.PASSWORD
 		},
 		// or connection: process.env.DB_URL
