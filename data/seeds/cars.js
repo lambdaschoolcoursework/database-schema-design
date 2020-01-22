@@ -9,6 +9,13 @@ exports.seed = knex => {
 					model: 'corolla',
 					mileage: 12345
 				},
+				{
+					id: 2,
+					vin: '12345',
+					make: 'honda',
+					model: 'accord',
+					mileage: 12345
+				}
 			]);
     });
 };

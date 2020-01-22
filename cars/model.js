@@ -1,9 +1,14 @@
-const database = require('../data/database');
+const database = require('../data/databaseConfiguration');
 
-function fetchCars() {
+const fetch = () => {
     return database('cars');
 };
 
+const create = (car) => {
+    return database('cars').insert(car);
+};
+
 module.exports = {
-    fetchCars
+    fetch,
+    create
 };
